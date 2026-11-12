@@ -48,6 +48,7 @@ public final class GboardKeyboardLayoutSettingsGroupFeature
                         new GboardLatinGlobeKeyIgnoreIntervalSettingsFeature(context),
                         new GboardEnglishUppercaseToggleSettingsFeature(context),
                         new GboardZhuyinBottomRowWeightSettingsFeature(context),
+                        new dev.jason.gboardpatches.extension.zhuyindictionary.GboardZhuyinDictionarySettingsFeature(context),
                         new GboardZhuyinSimplifiedCandidateButtonSettingsFeature(context),
                         new GboardSymbolFooterOrderSettingsFeature(context),
                         new GboardEmojiSizeSettingsFeature(context),

@@ -1,5 +1,5 @@
 {
-  "version": "3.13.0",
+  "version": "3.15.0",
   "patches": [
     {
       "name": "AI Writing Tools",
@@ -522,6 +522,18 @@
       "options": []
     },
     {
+      "name": "Zhuyin Personal Dictionary Candidates",
+      "description": "將個人字典中文詞條併入原生「建議聯絡人」列表，字典變更時自動重建，不需捷徑。\nMerge Chinese personal dictionary words into Suggest contacts and rebuild on dictionary changes, without shortcuts.",
+      "use": false,
+      "dependencies": [],
+      "compatiblePackages": {
+        "com.google.android.inputmethod.latin": [
+          "18.0.3.954559732-release-arm64-v8a"
+        ]
+      },
+      "options": []
+    },
+    {
       "name": "Zhuyin Personal Dictionary Shortcuts",
       "description": "注音輸入時使用個人字典捷徑，例如 ㄉ 顯示訂飲料\nUse personal dictionary shortcuts with Zhuyin input, such as ㄉ suggesting 訂飲料.",
       "use": true,
@@ -540,6 +552,18 @@
       "dependencies": [
         "Zhuyin Slide Input"
       ],
+      "compatiblePackages": {
+        "com.google.android.inputmethod.latin": [
+          "18.0.3.954559732-release-arm64-v8a"
+        ]
+      },
+      "options": []
+    },
+    {
+      "name": "Zhuyin Simplified Candidate Button",
+      "description": "在注音或粵語候選字展開頁，將「單字候選字」按鈕替換為繁簡切換按鈕。\nReplace the Single character candidates button in the expanded Zhuyin or Cantonese candidate list with an independent Traditional/Simplified Chinese toggle, configurable in Patches settings.",
+      "use": true,
+      "dependencies": [],
       "compatiblePackages": {
         "com.google.android.inputmethod.latin": [
           "18.0.3.954559732-release-arm64-v8a"

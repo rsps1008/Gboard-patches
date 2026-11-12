@@ -1597,6 +1597,36 @@
       ]
     },
     {
+      "feature_id": "zhuyin_classic_candidates",
+      "public_patch_name": "Zhuyin Personal Dictionary Candidates",
+      "feature_marker": "dev.jason.gboardpatches.feature.zhuyin_classic_candidates",
+      "target_family_ids": [
+        "zhuyindictionary"
+      ],
+      "migration_scope": "version-sensitive",
+      "consumer_files": [
+        "patches/src/main/kotlin/dev/jason/gboardpatches/patches/gboard/features/zhuyindictionary/GboardZhuyinClassicCandidatesMarkerPatch.kt",
+        "patches/src/main/kotlin/dev/jason/gboardpatches/patches/gboard/features/zhuyindictionary/GboardZhuyinPersonalDictionaryPatch.kt",
+        "patches/src/main/kotlin/dev/jason/gboardpatches/patches/gboard/registry/GboardPatchRegistry.kt"
+      ],
+      "contributions": [
+        {
+          "contribution_id": "zhuyin_classic_candidates.bytecode",
+          "anchor_family_id": "dedicated_bytecode",
+          "phase": "dedicated",
+          "order": 2000,
+          "required_bindings": [],
+          "runtime_calls": [
+            "ZHUYIN_PERSONAL_DICTIONARY_CHANGED",
+            "ZHUYIN_CONTACTS_DICTIONARY_MERGE",
+            "ZHUYIN_CONTACTS_DICTIONARY_FINISHED",
+            "ZHUYIN_CONTACTS_DICTIONARY_ABORTED",
+            "ZHUYIN_CONTACTS_DICTIONARY_REBUILD_REQUIRED"
+          ]
+        }
+      ]
+    },
+    {
       "feature_id": "zhuyin_quick_traditional_simplified_toggle",
       "public_patch_name": "Zhuyin Quick Traditional/Simplified Toggle",
       "feature_marker": null,

@@ -1,3 +1,22 @@
+## [3.15.0](https://github.com/rsps1008/Gboard-patches/compare/v3.14.0...v3.15.0) (2026-11-12)
+
+### 新功能
+
+* 新增 **Zhuyin Personal Dictionary Candidates**：將個人字典中文詞條併入原生「建議聯絡人」候選來源，不需設定捷徑。
+* 新增、修改、刪除字典詞條及切換開關時，自動重建聯絡人建議列表；即使通訊錄人數不變，也會更新。
+* 補包設定提供功能開關、中文詞條數與上次重建加入的建議詞數。
+* 保留真正的聯絡人、原有權重及原生讀音／選詞流程，不會建立或修改手機聯絡人。
+
+使用前請開啟 Gboard 原生「建議聯絡人」，並授予聯絡人權限。個人字典語言選「所有語言」或中文，捷徑可留空。
+
+### New feature
+
+* Add **Zhuyin Personal Dictionary Candidates**, merging Chinese personal dictionary words into native contact suggestions without shortcuts.
+* Automatically rebuild suggestions after dictionary additions, edits, deletions, or toggle changes, including when the real contact count is unchanged.
+* Add a settings toggle and dictionary/import counts. Preserve real contacts and their weights without writing to the phone contacts provider.
+
+Requires Gboard’s **Suggest contacts** setting and contacts permission. Candidate readings and ordering remain controlled by Gboard’s native model.
+
 ## [3.13.0](https://github.com/jasonwu1994/Gboard-patches/compare/v3.12.0...v3.13.0) (2026-10-15)
 
 ### ✨ New Features

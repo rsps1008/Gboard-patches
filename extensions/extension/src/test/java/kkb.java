@@ -1,2 +1,2 @@
 /** Obfuscated target fixture used only by the shortcut bridge contract tests. */
-public final class kkb {}
+public final class kkb extends hbd {}

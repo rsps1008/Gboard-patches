@@ -1,6 +1,11 @@
 package dev.jason.gboardpatches.patches.gboard.shared.runtimeabi
 
 internal enum class RuntimeCallId(internal val encodedAbi: String) {
+    ZHUYIN_PERSONAL_DICTIONARY_CHANGED("Ldev/jason/gboardpatches/extension/zhuyindictionary/GboardZhuyinPersonalDictionaryRuntime;->personalDictionaryChanged(Ljava/lang/Object;)V"),
+    ZHUYIN_CONTACTS_DICTIONARY_MERGE("Ldev/jason/gboardpatches/extension/zhuyindictionary/GboardZhuyinPersonalDictionaryRuntime;->mergeContacts(Ljava/lang/Object;)V"),
+    ZHUYIN_CONTACTS_DICTIONARY_FINISHED("Ldev/jason/gboardpatches/extension/zhuyindictionary/GboardZhuyinPersonalDictionaryRuntime;->contactsFinished(Ljava/lang/Object;)V"),
+    ZHUYIN_CONTACTS_DICTIONARY_ABORTED("Ldev/jason/gboardpatches/extension/zhuyindictionary/GboardZhuyinPersonalDictionaryRuntime;->contactsAborted(Ljava/lang/Object;)V"),
+    ZHUYIN_CONTACTS_DICTIONARY_REBUILD_REQUIRED("Ldev/jason/gboardpatches/extension/zhuyindictionary/GboardZhuyinPersonalDictionaryRuntime;->contactsRebuildRequired(Ljava/lang/Object;)Z"),
     ZHUYIN_SHORTCUTS_BEGIN_IMPORT("Ldev/jason/gboardpatches/extension/zhuyindictionary/GboardZhuyinShortcutCandidates;->beginImport(Ljava/lang/Object;)V"),
     ZHUYIN_SHORTCUTS_FINISH_IMPORT("Ldev/jason/gboardpatches/extension/zhuyindictionary/GboardZhuyinShortcutCandidates;->finishImport(Ljava/lang/Object;)V"),
     ZHUYIN_SHORTCUTS_RECORD_ENTRY("Ldev/jason/gboardpatches/extension/zhuyindictionary/GboardZhuyinShortcutCandidates;->recordEntry(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"),

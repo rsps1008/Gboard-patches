@@ -696,6 +696,7 @@ class GboardPortProductCatalogContractTest {
             "use_bluetooth_microphone" to "version-sensitive",
             "web_clipboard" to "version-sensitive",
             "zhuyin_bottom_row_key_sizes" to "version-sensitive",
+            "zhuyin_classic_candidates" to "version-sensitive",
             "zhuyin_quick_traditional_simplified_toggle" to "version-sensitive",
             "zhuyin_shortcut_dictionary" to "version-sensitive",
             "zhuyin_simplified_candidate_button" to "version-sensitive",

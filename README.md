@@ -295,6 +295,12 @@ Features tailored to Traditional Chinese and Zhuyin input workflows.
 </details>
 
 <details>
+  <summary><code>Zhuyin Personal Dictionary Candidates</code></summary>
+
+  Include Chinese personal-dictionary words, such as `訂飲料`, in Gboard's native contact suggestions without requiring a shortcut. Adding, editing, or deleting dictionary entries automatically rebuilds the list. Enable Suggest contacts and grant contacts access, then use the independent switch under Patches settings → Keyboard layout. See [details](docs/zhuyin-classic-dictionary-candidates.md).
+</details>
+
+<details>
   <summary><code>Zhuyin Quick Traditional/Simplified Toggle</code></summary>
 
   Swipe up on the Zhuyin <code>ㄥ</code> key to quickly toggle between Traditional and Simplified Chinese.

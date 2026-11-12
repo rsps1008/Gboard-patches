@@ -3278,4 +3278,32 @@
         <translation locale="en">Editing buttons settings unavailable. Reopen settings and try again.</translation>
         <translation locale="zh-Hant">編輯按鈕設定無法載入，請重新開啟設定再試一次。</translation>
     </string>
+    <string name="gboard_patches_zhuyin_dictionary_title">
+        <translation locale="en">Personal Dictionary Zhuyin Candidates</translation>
+        <translation locale="zh-Hant">個人字典注音候選</translation>
+    </string>
+    <string name="gboard_patches_zhuyin_dictionary_summary">
+        <translation locale="en">Merge Chinese dictionary words into Suggest contacts. Enable Gboard’s Suggest contacts and allow contacts access. No shortcut is required.</translation>
+        <translation locale="zh-Hant">將字典中文詞條加入「建議聯絡人」列表，不需捷徑。請開啟 Gboard 原生「建議聯絡人」並允許存取聯絡人；字典變更時會重建列表。</translation>
+    </string>
+    <string name="gboard_patches_zhuyin_dictionary_error">
+        <translation locale="en">Dictionary candidates unavailable</translation>
+        <translation locale="zh-Hant">字典候選無法使用</translation>
+    </string>
+    <string name="gboard_patches_zhuyin_dictionary_retry">
+        <translation locale="en">Reopen Gboard settings and try again.</translation>
+        <translation locale="zh-Hant">請重新開啟 Gboard 設定再試一次。</translation>
+    </string>
+    <string name="gboard_patches_zhuyin_dictionary_section">
+        <translation locale="en">Zhuyin candidates</translation>
+        <translation locale="zh-Hant">注音候選</translation>
+    </string>
+    <string name="gboard_patches_zhuyin_dictionary_status">
+        <translation locale="en">Chinese dictionary words: %1$d; suggestion terms added in the last rebuild: %2$d.</translation>
+        <translation locale="zh-Hant">中文詞條：%1$d 筆；上次重建新增建議詞：%2$d 筆。</translation>
+    </string>
+    <string name="gboard_patches_zhuyin_dictionary_pending">
+        <translation locale="en">Chinese dictionary words: %1$d; waiting for contacts suggestions to rebuild.</translation>
+        <translation locale="zh-Hant">中文詞條：%1$d 筆；等待聯絡人建議列表重建。</translation>
+    </string>
 </settings-text>

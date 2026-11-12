@@ -53,7 +53,7 @@ class GboardClipboardContentLimitPatchContractTest {
     }
 
     private fun read(relative: String): String =
-        Files.readString(repositoryRoot().resolve(relative))
+        Files.readString(repositoryRoot().resolve(relative)).replace("\r\n", "\n")
 
     private fun repositoryRoot(): Path =
         generateSequence(Path.of("").toAbsolutePath()) { it.parent }

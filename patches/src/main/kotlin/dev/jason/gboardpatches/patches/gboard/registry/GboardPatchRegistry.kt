@@ -103,6 +103,8 @@ import dev.jason.gboardpatches.patches.gboard.shared.generated.GboardTargetAdmis
 import dev.jason.gboardpatches.patches.gboard.features.zhuyinbottomrow.gboardZhuyinBottomRowWeightFeatureMarkerPatch
 import dev.jason.gboardpatches.patches.gboard.features.zhuyinbottomrow.gboardZhuyinBottomRowWeightSoftKeyPatch
 import dev.jason.gboardpatches.patches.gboard.features.zhuyindictionary.gboardZhuyinShortcutDictionaryBytecodePatch
+import dev.jason.gboardpatches.patches.gboard.features.zhuyindictionary.gboardZhuyinClassicCandidatesMarkerPatch
+import dev.jason.gboardpatches.patches.gboard.features.zhuyindictionary.gboardZhuyinPersonalDictionaryBytecodePatch
 import dev.jason.gboardpatches.patches.shared.Constants.COMPATIBILITY_GBOARD
 
 private fun gboardPublicResourcePatch(
@@ -542,6 +544,22 @@ val gboardZhuyinSimplifiedCandidateButtonPatch = gboardPublicResourcePatch(
 }
 
 @Suppress("unused")
+val gboardZhuyinClassicCandidatesPatch = gboardPublicResourcePatch(
+    featureId = "zhuyin_classic_candidates",
+    name = "Zhuyin Personal Dictionary Candidates",
+    description = "將個人字典中文詞條併入原生「建議聯絡人」列表，字典變更時自動重建，不需捷徑。\n" +
+        "Merge Chinese personal dictionary words into Suggest contacts and rebuild on dictionary changes, without shortcuts.",
+    default = false,
+) {
+    compatibleWith(COMPATIBILITY_GBOARD)
+    dependsOn(
+        gboardPatchesSettingsPatch,
+        gboardZhuyinClassicCandidatesMarkerPatch,
+        gboardZhuyinPersonalDictionaryBytecodePatch,
+    )
+}
+
+@Suppress("unused")
 val gboardZhuyinShortcutDictionaryPatch = gboardPublicResourcePatch(
     featureId = "zhuyin_shortcut_dictionary",
     name = "Zhuyin Personal Dictionary Shortcuts",
@@ -939,6 +957,7 @@ object GboardPublishedPatchCatalog {
         gboardZhuyinQuickTraditionalSimplifiedTogglePatch,
         gboardZhuyinSimplifiedCandidateButtonPatch,
         gboardZhuyinShortcutDictionaryPatch,
+        gboardZhuyinClassicCandidatesPatch,
         gboardCustomSymbolsPatch,
         gboardCustomTopRowSwipePatch,
         gboardBackupRestorePatch,
